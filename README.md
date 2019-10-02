@@ -1,37 +1,16 @@
-## Welcome to GitHub Pages
+## Background
 
-You can use the [editor on GitHub](https://github.com/malfusion/pix2pix-video-synthesis/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This project is inspired by the way humans learn to imagine the next few frames of video, when it comes to fluid motion. Just as we need to have seen a lot of occurences beforehand to imagine it with high accuracy, so does a neural network.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Architecture
+This is an implementation of the Pix2pix GAN architecture in PyTorch for Image-to-Image Translation, with a U-Net Generator and a PatchGAN Discriminator. We train the network on a specific set of video pertaining to the field that we want the network to learn (Eg: Clouds, water, waves, ink drops, etc) and task the network to predict the succeeding video frame, given a single frame as input. 
 
-### Markdown
+The skip connections in the U-Net Generator help the network learn a transformation on the original frame, while maintaining the details from the original image.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+We train the network for 200 epochs of 2000 frames of video with a batch size of 1 to achieve the results.
 
-```markdown
-Syntax highlighted code block
+**Todo:**
 
-# Header 1
-## Header 2
-### Header 3
+- Use a 70x70 PatchGAN as mentioned in the paper - "Image-to-Image Translation with Conditional Adversarial Networks" to optimise the output of the network.
+- Varying the Lambda weight on the GAN loss/Pixel Loss tradeoff, to observe the difference in high and low frequence detail reproduction.
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/malfusion/pix2pix-video-synthesis/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
