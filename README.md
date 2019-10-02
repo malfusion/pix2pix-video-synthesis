@@ -3,7 +3,7 @@ Using Feedback Loops To Synthesize Video from a Single Image
 
 Input: ![render_198](https://user-images.githubusercontent.com/2308001/66068576-d613a480-e51b-11e9-9d15-209644da0870.png)
 
-Output: <iframe width="560" height="315" src="https://www.youtube.com/embed/Xg4bsVMgkq0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Xg4bsVMgkq0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## Background
