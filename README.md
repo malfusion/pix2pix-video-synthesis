@@ -1,3 +1,6 @@
+# Pix2Pix Video Synthesis: Next Frame Prediction
+Using Feedback Loops To Synthesize Video from a Single Image
+
 ## Background
 
 This project is inspired by the way humans learn to imagine the next few frames of video, when it comes to fluid motion. Just as we need to have seen a lot of occurences beforehand to imagine it with high accuracy, so does a neural network.
