@@ -1,2 +1,5 @@
 theme: jekyll-theme-cayman
-title: Pix2Pix Video Synthesis: Next Frame Prediction
+titles_from_headings:
+  enabled:     true
+  strip_title: false
+  collections: false
